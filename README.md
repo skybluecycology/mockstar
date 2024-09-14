@@ -1,6 +1,8 @@
 # Mock Data Generator
 
-This library generates mock data for fact and dimension tables based on metadata.
+## Requirement
+
+This library generates mock data for fact and dimension tables based on metadata. Allow for list override for the eval/lambda functions in the meta data.
 
 mock_data_generator/
 │
