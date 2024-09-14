@@ -20,7 +20,8 @@ pip install .
 ```
 
 ## Usage
-'''python
+
+```python
 from mock_data_generator import MockDataGenerator
 
 # Initialize the generator with a metadata file
@@ -41,3 +42,12 @@ fact_with_full_data = fact_with_customers.merge(products, on='ProductID').merge(
 
 print(fact_with_full_data.head())
 ```
+
+## Explanation
+Package Structure: The code is organized into a package with a module for generating mock data.
+
+Metadata Handling: The MockDataGenerator class reads metadata from a JSON file and uses it to generate tables.
+
+Installation and Usage: The setup.py file allows you to install the package, and the README.md file provides usage instructions.
+
+This setup allows you to share the library easily and use it in different projects by simply importing the MockDataGenerator class and providing a metadata file.
