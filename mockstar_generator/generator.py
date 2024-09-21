@@ -19,6 +19,7 @@ class MockDataGenerator:
             else:
                 # Evaluate the expression for generating data
                 columns[col_name] = eval(col_expr)
+                columns[col_name] = exec(col_expr)
         return pd.DataFrame(columns)
 
     def generate_all_tables(self):
